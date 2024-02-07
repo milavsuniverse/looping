@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <script>
+        for(let w = 100; w >= 50; w-- ) {   
+            console.log('data ke', w)
+        }
+
+        // while
+        let v = 1
+        //x tu artinya 1
+        while(v <=10){
+            console.log('data ke v ke ', v)
+            v++
+        }
+
+        do adalah lakukan apa dulu
+        
+        
+        //dowhile
+        let b = 1
+        do {
+            console.log('data b ke', b)
+            b++
+        } while (b <= 10)
+        
+
+        membuat bilangan ganjil dan genap 1-10
+        for(let x = 1; x <= 10; x++) {
+            if(x % 2 == 1) {
+                console.log('bilangan ganjil', x);
+            } else {
+                console.log('bilangan genap', x);
+            }
+        }
+
+        let bil= 1;
+        while(bil <= 10) {
+            if(bil % 2 == 1){
+                console.log ('while bilangan ganjil', bil);
+            } else {
+                console.log('while bilangan genap', bil);
+            }
+            bil++
+        }
+
+        let y = 1
+         do{
+            if(y % 2 == 1) {
+                console.log('do while bilangan ganjil', y);
+            } else {
+                console.log('do while bilangan genap', y);
+            }
+            y++
+         } while(y <=10 )
+
+
+         //perkalian
+         let faktorial = 1
+         let angka = 5
+
+         for(let n = 1; n <= angka; n++) {
+            faktorial *=n;
+         }
+
+         console.log(`faktorial dari ${angka} adalah ${faktorial}`)
+
+
+
+         //while
+        let hasilWhile = 1;
+        let n = 1;
+        while(n <= 5) {
+            hasilWhile *= n
+            n++
+        }
+        console.log(`faktorial dari 5 adalah ${hasilWhile}`);
+
+        //dowhile
+        let a = 1
+        let hasilDo = 1;
+        do{
+            hasilDo *= a
+            a++
+        } while(a<=20)
+        console.log(hasilDo);
+    
+
+        //kabisat
+      for (let tahun = 1600; tahun <= 2024; tahun++) {
+        if (tahun % 400 === 0) {
+            console.log(`tahun ${tahun} adalah tahun kabisat`);
+        } else if (tahun %  100 === 0) {
+            console.log(`tahun ${tahun} adalah bukan tahun kabisat`);
+        } else if ( tahun % 4 === 0) {
+            console.log(`tahun ${tahun} adalah tahun kabisat`);
+        }
+      }
+    </script>
+</body>
+</html>
